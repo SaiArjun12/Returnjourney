@@ -24,7 +24,7 @@ const GameTask = () => {
 
     if (gameStarted && !gameOver) {
       changeBoxColor();
-      intervalId = setInterval(changeBoxColor, 2000);
+      intervalId = setInterval(changeBoxColor, 1500);
 
       setTimeout(() => {
         clearInterval(intervalId);
