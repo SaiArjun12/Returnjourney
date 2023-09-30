@@ -1,0 +1,128 @@
+
+body {
+  margin: 0;
+  font-family:monospace;
+  background: linear-gradient(to bottom, #4CAF50, #2196F3); 
+  color: black;
+  
+}
+
+
+.App {
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+ 
+}
+
+
+.App-header {
+  background: linear-gradient(to bottom, #4CAF50, #2196F3); 
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size:calc(12px + 2vmin);
+  font-style:oblique;
+  border-radius: 15px; 
+  text-emphasis-color: black;;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.game-container {
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  margin: 20px auto;
+  background-color: aqua;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+@media (min-width: 768px) {
+  .game-container {
+    width: 400px;
+  }
+
+  input, select, button {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .game-container {
+    width: 90%;
+  }
+
+  input, select, button {
+    font-size: 14px;
+  }
+}
